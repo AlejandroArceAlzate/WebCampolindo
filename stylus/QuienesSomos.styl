@@ -5,7 +5,7 @@
 a
 	text-decoration none 
 body
-	background-image url('../img/Fondo.png')
+	background-image url('../img/Fondos/FondoQuienesSomos.jpg')
 	font-family 'open sans', Arial, Helvetica, sans-serif
 	font-size 12px
 footer
@@ -22,29 +22,49 @@ header
 		z-index 2 
 	.facebook
 		height 58px
-		margin 1em 5em 0 0
+		position absolute
+		margin .1em 1em 0 0
 		right 5em
+		top .1em 
 		width 59px
 		z-index 4
 	.twitter
 		height 58px
-		margin 1em 5em 0 0
+		position absolute
+		margin .1em 1em 0 0
 		right .1em
+		top .1em
 		width 58px
 		z-index 5
 		
 .menu
-	padding-left 7em
+	float right
+	margin-top -6em
 	ul
 		list-style none
 		li
 			display inline-block
 			padding 0
-			margin 0		
+			margin -1.1em		
 section
 	iframe
 		margin-top 10em
 		padding-left 13em
+.infoQuienesSomos
+	font-size 1.7em
+	width 80%
+	max-width 768px
+	margin-left 15em
+.labs1
+	background rgba(white,.2)
+	margin-left 4em
+	margin-bottom 4em
+	figure
+		display inline-block
+		margin 1em
+		&:hover
+			transform scale(1.5,1.5)
+			transition 1s
 .Slider
 	background #C4BC82
 	border 3px solid #3B3013
