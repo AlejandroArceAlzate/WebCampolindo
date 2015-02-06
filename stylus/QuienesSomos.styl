@@ -37,15 +37,70 @@ header
 		width 58px
 		z-index 5
 		
-.menu
-	float right
-	margin-top -6em
+#menu, #menu ul
+	list-style none
+	
+#menu:before, #menu:after
+	content ""
+	display table
+	
+#menu:after
+	clear both
+#menu
+	margin 0 0 .5em 7em
+	zoom 1
 	ul
-		list-style none
-		li
-			display inline-block
-			padding 0
-			margin -1.1em		
+		margin 20px 0 0 0
+		visibility hidden
+		position absolute
+		top 30px
+		left 0
+		z-index 1
+		transition all .2s ease-in-out
+	li
+		float left 
+		position relative
+		z-index 9999
+		&:hover > ul
+			visibility visible
+			margin 0 0 0 1em
+	a
+		float left
+		text-decoration none
+	img
+		z-index 9999
+		&:hover
+			opacity .85
+		
+#menu ul ul
+	top 0
+	left 150px
+	margin 0 0 0 20px
+
+#menu ul li
+	float none
+	display block
+	border 0
+	margin-left 1em
+	
+#menu ul a
+	padding 10px
+	width 130px
+	display block
+	float none
+	white-space nowrap
+	text-transform none
+
+#menu ul li:first-child > a:after
+	content ""
+	position absolute
+	left 40px
+	top -6px
+#menu ul ul li:first-child a:after
+	left -6px
+	top 50%
+	margin-top -6px
+	border-left 0
 section
 	iframe
 		margin-top 10em
@@ -77,7 +132,7 @@ section
 		margin 0 auto	  	
 .socios1
 	background rgba(white,.4)
-	border-top: 2px solid #2F623C;
+	border-top 2px solid #2F623C
 	margin-left 2em
 	figure
 		display inline-block
@@ -95,6 +150,33 @@ section
 		&:hover
 			transform scale(1.5,1.5)
 			transition 1s
+#apDiv1 
+	position absolute
+	width 200px
+	height 115px
+	z-index 2001
+
+#apDiv2 
+	position absolute
+	width 200px
+	height 115px
+	z-index 2001
+	left 576px
+	top 472px
+#apDiv3 
+	position absolute
+	width 200px
+	height 115px
+	z-index 2001
+	left 461px
+	top 467px
+#apDiv4 
+	position absolute
+	width 1237px
+	height 70px
+	z-index 2002
+	left 185px
+	top 165px
 		
 
 
